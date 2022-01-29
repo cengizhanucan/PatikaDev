@@ -1,0 +1,32 @@
+public class Test101 {
+    public static void main(String[] args) {
+       int mat,fizik,kimya,tur,tarih,muz;
+       Scanner scan=new Scanner(System.in);
+
+        System.out.println("Matematik Notunu Giriniz:");
+        mat=scan.nextInt();
+
+        System.out.println("Fizik Notunu Giriniz:");
+        fizik=scan.nextInt();
+
+        System.out.println("Kimya Notunu Giriniz:");
+        kimya=scan.nextInt();
+
+        System.out.println("Turkce Notunu Giriniz:");
+        tur=scan.nextInt();
+
+        System.out.println("Tarih Notunu Giriniz:");
+        tarih=scan.nextInt();
+
+        System.out.println("Muzik Notunu Giriniz:");
+        muz=scan.nextInt();
+
+        int toplam=mat+fizik+kimya+tur+tarih+muz;
+        int sonuc=toplam/6;
+        System.out.println("Sonucunuz:"+sonuc);
+        boolean gecti;
+        gecti = (sonuc > 60) ? true : false;
+        System.out.println(gecti ? "Sınıfı Geçti": "Sınıfta Kaldı");
+
+    }
+}
